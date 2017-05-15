@@ -1,0 +1,96 @@
+.bt_nav{
+    float: left;
+}
+.bt_nav .nav {
+    width: 113px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    font-family: "SimSun";
+}
+.bt_nav .header_nav {
+    /*border-bottom: 1px solid #ddd;*/
+}
+.bt_nav .header_nav > li {
+    /*float: left;*/
+    margin-bottom: -1px;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    margin: 10px 0;
+}
+.bt_nav .header_nav > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    /*border: 1px solid transparent;*/
+    /*border-radius: 4px 4px 0 0;*/
+    color: #9fa0a0;
+    padding: 0;
+    height: 100%;
+}
+.bt_nav .header_nav > li > a:hover {
+    /*border-color: #eee #eee #ddd;*/
+    border: none;
+    background-color: #0091DB;
+    color: #fff;
+}
+.bt_nav .header_nav > li.active > a,
+.bt_nav .header_nav > li.active > a:hover,
+.bt_nav .header_nav > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color:#0091DB;
+    /*border: 1px solid #ddd;*/
+    border-bottom-color: transparent;
+    border: none;
+}
+.bt_nav .header_nav.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+.bt_nav .header_nav.nav-justified > li {
+    float: none;
+}
+.bt_nav .header_nav.nav-justified > li > a {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.bt_nav .header_nav.nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+@media (min-width: 768px) {
+    .bt_nav .header_nav.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .bt_nav .header_nav.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+}
+.bt_nav .header_nav.nav-justified > li > a {
+    margin-right: 0;
+    border-radius: 4px;
+}
+.bt_nav .header_nav.nav-justified > .active > a,
+.bt_nav .header_nav.nav-justified > .active > a:hover,
+.bt_nav .header_nav.nav-justified > .active > a:focus {
+    /*border: 1px solid #ddd;*/
+    background-color: #fff;
+}
+@media (min-width: 768px) {
+    .bt_nav .header_nav.nav-justified > li > a {
+        /*border-bottom: 1px solid #ddd;*/
+        border-radius: 4px 4px 0 0;
+    }
+    .bt_nav .header_nav.nav-justified > .active > a,
+    .bt_nav .header_nav.nav-justified > .active > a:hover,
+    .bt_nav .header_nav.nav-justified > .active > a:focus {
+        /*border-bottom-color: #fff;*/
+        background-color: #fff;
+    }
+}
+
+.bt_nav .tab-content{
+    float: right;
+}

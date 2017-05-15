@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <script>
+        var html = document.getElementsByTagName("html")[0];
+//        console.log(html);
+        var width = window.innerWidth;
+//        console.log(width);
+//        比例：屏幕是640宽的时候，字体大小是100；屏幕大小是320的时候，字体大小是50；
+        var fontSize = 100/640*width;
+//        console.log(fontSize);
+        html.style.fontSize = fontSize + "px";
+        window.onresize = function(){
+            var html = document.getElementsByTagName("html")[0];
+//            console.log(html);
+            var width = window.innerWidth;
+            var fontSize = 100 / 640 * width;
+            html.style.fontSize = fontSize + "px";
+        }
+    </script>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 2rem;
+            height: 2rem;
+            background: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>asc</div>
+</body>
+</html>
